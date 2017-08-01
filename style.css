@@ -80,3 +80,19 @@ html {
   text-shadow: 2px 2px #000;
   color: #FFF;
 }
+
+.clickme{
+    font-family: arial;
+    font-size: 35px; 
+    color: white;
+}
+
+.container{
+    bottom: 0; 
+}
+.start{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -50px;
+}
