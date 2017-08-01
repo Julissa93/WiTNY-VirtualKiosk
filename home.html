@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Virtual Kiosk</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="animate/animate.css">
+<link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="hover/css/hover.css">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+
+<style>
+@import url(http://fonts.googleapis.com/css?family=Anton|Roboto);
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  display: block;
+  padding: 10px;
+  background-color: #cbe5db;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Anton', sans-serif;
+  font-weight: normal;
+  color: #2c966d;
+  font-size: 1.2em;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-weight: normal;
+  margin-top: 0px;
+  border-bottom: solid 1px #ccc;
+  color: #2c966d;
+}
+
+#wrapper {
+  -webkit-perspective: 1100px;
+  -webkit-perspective-origin: 50% 300px;
+  perspective: 1100px;
+  perspective-origin: 50% 300px;
+  margin-top: 250px;
+}
+
+#cube {
+  position: relative;
+  margin: 0 auto;
+  height: 1200px;
+  width: 800px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 2s ease;
+  transform-style: preserve-3d;
+  transition: all 2s ease;
+}
+
+.face {
+  position: absolute;
+  height: 800px;
+  width: 800px;
+  border: solid 1px #ccc;
+}
+
+
+
+
+
+
+#cube .one {
+  -webkit-transform: rotateX(90deg) translateZ(400px);
+  transform: rotateX(90deg) translateZ(400px);
+}
+
+#cube .two {
+  -webkit-transform: translateZ(400px);
+  transform: translateZ(400px);
+}
+
+#cube .three {
+  -webkit-transform: rotateY(90deg) translateZ(400px);
+  transform: rotateY(90deg) translateZ(400px);
+}
+
+#cube .four {
+  -webkit-transform: rotateY(180deg) translateZ(400px);
+  transform: rotateY(180deg) translateZ(400px);
+}
+
+#cube .five {
+  -webkit-transform: rotateY(-90deg) translateZ(400px);
+  transform: rotateY(-90deg) translateZ(400px);
+}
+
+#cube .six {
+  -webkit-transform: rotateX(-90deg) translateZ(400px) rotate(180deg);
+  transform: rotateX(-90deg) translateZ(400px) rotate(180deg);
+}
+</style>
+</head>
+
+<body>
+<nav>
+  <ul>
+    <li><a href="#" id="face1">Home</a></li>
+    <li><a href="#" id="face2">About</a></li>
+    <li><a href="#" id="face3">News</a></li>
+    <li><a href="#" id="face4">Contact</a></li>
+  </ul>
+</nav>
+
+<div id="wrapper">
+  <div id="cube">
+    <!-- __________________________________________________ Face 1 __________________________________________________-->
+    <div class="face one" id="">
+      
+    </div>
+    <!-- __________________________________________________ Face 2 __________________________________________________-->
+    <div class="face two" id="face2">
+      <div class="container">
+        
+      </div>
+    </div>
+
+
+    <!-- __________________________________________________ Face 3 __________________________________________________-->
+    <div class="face three" id="face3">
+      <h1>Face 3</h1>
+    </div>
+
+
+    <!-- __________________________________________________ Face 4 __________________________________________________-->
+    <div class="face four" id="face4">
+      <h1>Face 4</h1>
+    </div>
+
+     <!-- __________________________________________________ Face 5 __________________________________________________-->
+    <div class="face five" id="face5">
+     <h1>Face </h1>
+    </div>
+
+     <!-- __________________________________________________ Face 6 __________________________________________________-->
+    <div class="face six" id="face6">
+      <h1>Face 4</h1>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script>
+$(document).ready(function(){
+    
+    $("#face1").click(function(){
+       calcRotation(0);
+    });
+
+    $("#face2").click(function(){
+      calcRotation(90);
+    });
+    
+    $("#face3").click(function(){
+       calcRotation(180);
+    });
+
+    $("#face4").click(function(){
+        calcRotation(270);
+    });
+    
+    function calcRotation(rot){
+           $("#cube").css("transform", "rotateY(-" + rot + "deg)");
+    }
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
