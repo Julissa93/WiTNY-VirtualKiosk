@@ -85,14 +85,5 @@ html {
     font-family: arial;
     font-size: 35px; 
     color: white;
-}
-
-.container{
-    bottom: 0; 
-}
-.start{
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    margin-left: -50px;
+    
 }
