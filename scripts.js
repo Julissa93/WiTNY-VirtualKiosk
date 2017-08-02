@@ -5,6 +5,7 @@ $(document).ready(function(){
 	$("#slideshow-bob").toggle()
 	$("#announcements").toggle()
 	$("#suggestions").toggle()
+	$("#videos").toggle()
 });
 
 // blog
