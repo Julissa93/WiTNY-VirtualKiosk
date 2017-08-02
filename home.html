@@ -10,212 +10,148 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+
 <link rel="stylesheet" type="text/css" href="animate/animate.css">
 <link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="hover/css/hover.css">
-
 <link rel="stylesheet" type="text/css" href="style.css">
-
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="scripts.js"></script>
 
 <style>
-@import url(http://fonts.googleapis.com/css?family=Anton|Roboto);
-body {
-  margin: 0px;
-  font-family: 'Roboto', sans-serif;
-}
-
-nav {
-  display: block;
-  padding: 10px;
-  background-color: #cbe5db;
-}
-
-nav ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-family: 'Anton', sans-serif;
-  font-weight: normal;
-  color: #2c966d;
-  font-size: 1.2em;
-}
-
-h1 {
-  font-family: 'Anton', sans-serif;
-  font-weight: normal;
-  margin-top: 0px;
-  border-bottom: solid 1px #ccc;
-  color: #2c966d;
-}
-
-#wrapper {
-  -webkit-perspective: 1100px;
-  -webkit-perspective-origin: 50% 300px;
-  perspective: 1100px;
-  perspective-origin: 50% 300px;
-  margin-top: 250px;
-}
-
-#cube {
-  position: relative;
-  margin: 0 auto;
-  height: 800px;
-  width: 800px;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transition: all 2s ease;
-  transform-style: preserve-3d;
-  transition: all 2s ease;
-}
-
-.face {
-  position: absolute;
-  height: 800px;
-  width: 800px;
-  border: solid 1px #ccc;
-}
 
 
+  #wrapper {
+    -webkit-perspective: 1100px;
+    -webkit-perspective-origin: 50% 300px;
+    perspective: 1100px;
+    perspective-origin: 50% 300px;
+    margin-top: 100px;
+  }
 
+  #cube {
+    position: relative;
+    margin: 0 auto;
+    height: 1000px;
+    width: 600px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 2s ease;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+  }
 
+  .face {
+    position: absolute;
+    height: 1400px;
+    width: 600px;
+     border-radius: 5px;
+  }
 
+  #cube .one {
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+  }
 
-#cube .one {
-  -webkit-transform: rotateX(90deg) translateZ(400px);
-  transform: rotateX(90deg) translateZ(400px);
-}
+  #cube .two{
+    -webkit-transform: rotateY(90deg) translateZ(300px);
+    transform: rotateY(90deg) translateZ(300px);
+  }
 
-#cube .two {
-  -webkit-transform: translateZ(400px);
-  transform: translateZ(400px);
-}
+  #cube .three {
+    -webkit-transform: rotateY(180deg) translateZ(300px);
+    transform: rotateY(180deg) translateZ(300px);
+  }
 
-#cube .three {
-  -webkit-transform: rotateY(90deg) translateZ(400px);
-  transform: rotateY(90deg) translateZ(400px);
-}
+  #cube .four {
+    -webkit-transform: rotateY(-90deg) translateZ(300px);
+    transform: rotateY(-90deg) translateZ(300px);
+  }
 
-#cube .four {
-  -webkit-transform: rotateY(180deg) translateZ(400px);
-  transform: rotateY(180deg) translateZ(400px);
-}
-
-#cube .five {
-  -webkit-transform: rotateY(-90deg) translateZ(400px);
-  transform: rotateY(-90deg) translateZ(400px);
-}
-
-#cube .six {
-  -webkit-transform: rotateX(-90deg) translateZ(400px) rotate(180deg);
-  transform: rotateX(-90deg) translateZ(400px) rotate(180deg);
-}
 </style>
+
 </head>
 
 <body>
-<nav>
-  <ul>
-    <li><a href="#" id="face1">Home</a></li>
-    <li><a href="#" id="face2">About</a></li>
-    <li><a href="#" id="face3">News</a></li>
-    <li><a href="#" id="face4">Contact</a></li>
-  </ul>
-</nav>
 
-<div id="wrapper">
-  <div id="cube">
-    <!-- __________________________________________________ Face 1 __________________________________________________-->
-    <div class="face one" id="">
-      
-    </div>
-    <!-- __________________________________________________ Face 2 __________________________________________________-->
-    <div class="face two" id="face2">
-       <h1>Face 2</h1>
-          
-        <div class = "container-fluid jumbotron text-center cubebox">
-          <h1>Welcome To The Virtual Kiosk!</h1>
-        </div>
+   <!-- __________________________________________________ Navbar __________________________________________________-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#" id="face1">Front</a>
+  <a href="#" id="face2">Right</a>
+  <a href="#" id="face4">Left</a>
+  <a href="#" id="face3">Back</a>
+  
+</div>
 
-          <div class = "row">
-            <div class = "col-xs-12 col-sm-12 col-md-12">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24176.251535937678!2d-73.96828677849066!3d40.761333182809906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258c4d85a0d8d%3A0x11f877ff0b8ffe27!2sRoosevelt+Island!5e0!3m2!1sen!2sus!4v1501601044727" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div> 
-          </div>
-
-           <div class="row">
-             <div class = "col-xs-12 col-sm-12 col-md-12">
-              <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                <button type="button" class="btn btn-primary">Primary</button>
-
-                <!-- Secondary, outline button -->
-                <button type="button" class="btn btn-secondary">Secondary</button>
-
-                <!-- Indicates a successful or positive action -->
-                <button type="button" class="btn btn-success">Blog</button>
-
-                <!-- Contextual button for informational alert messages -->
-                <button type="button" class="btn btn-info">Info</button>
-
-                <!-- Indicates caution should be taken with this action -->
-                <button type="button" class="btn btn-warning">Warning</button>
-
-                <!-- Indicates a dangerous or potentially negative action -->
-                <button type="button" class="btn btn-danger">Danger</button>
-
-                <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-                <button type="button" class="btn btn-link">Link</button>
-              </div>
-          </div>     
-      </div>
-      
-    <!-- __________________________________________________ Face 3 __________________________________________________-->
-    <div class="face three" id="face3">
-      <h1>Face 3</h1>
-    </div>
-
-
-    <!-- __________________________________________________ Face 4 __________________________________________________-->
-    <div class="face four" id="face4">
-      <h1>Face 4</h1>
-    </div>
-
-     <!-- __________________________________________________ Face 5 __________________________________________________-->
-    <div class="face five" id="face5">
-     <h1>Face </h1>
-    </div>
-
-     <!-- __________________________________________________ Face 6 __________________________________________________-->
-    <div class="face six" id="face6">
-      <h1>Face 4</h1>
-    </div>
-  </div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 </div>
 
 
 
+<div class="animated fadeIn" id="wrapper">
+  <div id="cube">
+    <!-- __________________________________________________ Face 1 __________________________________________________-->
+    <div class="face one cubebox">
+      <div id="screen">
+        <div id="mainpage">
+          <div class = "container-fluid jumbotron text-center">
+            <h1>Welcome To The Virtual Kiosk!</h1>
 
 
+            <div class = "row">
+              <div class = "col-xs-12 col-sm-12 col-md-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24176.251535937678!2d-73.96828677849066!3d40.761333182809906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258c4d85a0d8d%3A0x11f877ff0b8ffe27!2sRoosevelt+Island!5e0!3m2!1sen!2sus!4v1501601044727" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div> 
+            </div>
+
+            <div class="row">
+              <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+              <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <div class = "col-xs-6 col-sm-6 col-md-6 col-lg-6 col-sm-offset-3 " >
+                  <center> 
+                    <button type="button" class="btn btn-primary btn-block" id="blogbutton">Blog</button><br>
+
+                    <!-- Secondary, outline button -->
+                    <button type="button" class="btn btn-primary btn-block">Announcements</button><br>
+
+                    <!-- Indicates a successful or positive action -->
+                    <button type="button" class="btn btn-primary btn-block">Suggestions</button><br>
+                  </center>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+
+        <div id="blogpage" >
+         <a type="button" id="backtomain"><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></a>
+          <h1>It works biotch!!!!!!</h1>
+
+        </div>
+      </div>
+    </div>
+      
+    <!-- __________________________________________________ Face 2 __________________________________________________-->
+    <div class="face two cubebox" >
+      <h1>right</h1>
+    </div>
 
 
+    <!-- __________________________________________________ Face 3 __________________________________________________-->
+    <div class="face three cubebox" >
+      <h1>back</h1>
+    </div>
 
+     <!-- __________________________________________________ Face 4 __________________________________________________-->
+    <div class="face four cubebox" >
+     <h1>left</h1>
+    </div>
 
-
-
-
-
-
-
-
+    
+  </div>
+</div>
 
 
 
@@ -243,6 +179,19 @@ $(document).ready(function(){
            $("#cube").css("transform", "rotateY(-" + rot + "deg)");
     }
 });
+
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+
 </script>
 <script type="text/javascript">
 
