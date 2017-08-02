@@ -126,13 +126,17 @@ hr{border: 1px solid orange;}
 /********* style for blog page *********/
 
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 #blogpage{
 
     /*overflow: scroll;*/
 }
 
+#nav {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif !important;
+}
 a {
    color:#333;
   -webkit-transition: all .3s;
@@ -164,16 +168,22 @@ a {
 
 /* ------ page ------ */
 .page{
-    background-color:#fff;
-    padding:20px 15px;
-    margin-bottom:20px;
+
+background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(#FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(#FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /*background-color:#fff;*/
+    border-radius: 15px; 
+    padding:10px 10px;
+    margin-bottom:10px;
 }
 .page h3{
-    font-size:22px;
+    font-size:15px;
     margin-bottom:12px;
 }
 .page p{
-    font-size:17px;
+    font-size:12px;
     font-weight:500;
 }
 .page .details ul{
@@ -194,6 +204,8 @@ a {
     font-size:13px;
     font-weight:600;
 }
+
+
 /* ------ wedgets ------ */
 .widgets{
     background-color:#fff;
@@ -266,8 +278,6 @@ a {
 .section-header {
   text-align: center;
   margin: 0 auto;
-  padding-top: 70px;
-  margin-bottom: 30px;
   font: 300 3rem 'Lato', sans-serif;
   letter-spacing: 2.7px;
   text-transform: uppercase;
