@@ -6,6 +6,9 @@ $(document).ready(function(){
 	$("#announcements").toggle()
 	$("#suggestions").toggle()
 	$("#videos").toggle()
+	$("#survey").toggle()
+	$("#surveyresults").toggle()
+	$("#makesuggestion").toggle()
 });
 
 // blog
@@ -104,7 +107,23 @@ $(document).ready(function(){
 	});
 });
 
+$(document).ready(function(){
+	$("#surveybutton").click(function() {
+	  $("#survey").slideToggle("slow");
+	});
+});
 
+$(document).ready(function(){
+	$("#surveyresultsbutton").click(function() {
+	  $("#surveyresults").slideToggle("slow");
+	});
+});
+
+$(document).ready(function(){
+	$("#makesuggestionbutton").click(function() {
+	  $("#makesuggestion").slideToggle("slow");
+	});
+});
 
 
 

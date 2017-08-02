@@ -395,23 +395,78 @@
        <div class="text-center" >
         <h1>Suggestions</h1>
           <div class="container-fluid">
+
             <div class="row">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSenL5n07XXt9UAUD0fEJkPe7Fj25GrcepwK-uUDSTf0KJjg8g/viewform?embedded=true" width="400" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
-              <!--<div class="panel panel-default">
-                <div class="panel-heading">
-                  What would you like to see?
-                </div>
-                <div class="panel-body">
-                    dafadfafasfa
-                </div>
-                <div class="panel-footer">
-                    
-
-                </div>
-              </div>-->
-                         
+               <center> 
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-sm-offset-3 ">
+                  <button type="button" class="btn btn-primary btn-block" id="surveybutton">Take Our Weekly Survey</button><br>              
+                  <button type="button" class="btn btn-primary btn-block" id="surveyresultsbutton">View This weeks Results</button><br>
+                  <button type="button" class="btn btn-primary btn-block" id="makesuggestionbutton">Make a Suggestion</button><br>
+                </div>                  
+                </center>
             </div>
+
+            <div class="row" id="survey">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSenL5n07XXt9UAUD0fEJkPe7Fj25GrcepwK-uUDSTf0KJjg8g/viewform?embedded=true" width="400" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+           </div>
+
+           <div class="panel panel-info" id="surveyresults">
+              <div class="panel-heading">
+                <h3>This Weeks Survey Results</h3>
+              </div>
+              <div class="panel-body">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                    Art Class
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                    Field Trips
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                    Movie Night
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                    Game Night
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:45%">
+                    Excercise Class
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                    Talent Show
+                  </div>
+                </div>
+                </div>
+
+           </div>
+
+           <div class="panel panel-info" id="makesuggestion">
+               <div class="panel-heading">
+                <h3>Make a Suggestion</h3>
+              </div>
+               <div class="panel-body">
+                
+              </div>
+           </div>
+
+
+
+
         </div>
       </div>
 
