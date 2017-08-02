@@ -186,17 +186,24 @@ hr{border: 1px solid orange;}
 #screen
 {
     background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-border: 5px solid black;
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 5px solid black;
     border-radius: 25px;
     height: 900px;
+    overflow-y: hidden;
 
 }
 
 /********* style for blog page *********/
 
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600');
+
+
+#blogpage{
+
+    /*overflow: scroll;*/
+}
 
 a {
    color:#333;
@@ -209,6 +216,7 @@ a {
 
 .img-responsive {
   width: 100%;
+   opacity: 0.85 !important;
 }
 /* ------ main-page ------ */
 .main-page{
@@ -219,11 +227,7 @@ a {
     max-width:1000px;
     margin:0 auto;
 }
-/* ------ top-nav ------ */
-.top-nav{
-    padding-top:10px;
-    padding-bottom:10px;
-}
+
 
 /* ------ main-banner ------ */
 .main-banner{
@@ -294,17 +298,9 @@ a {
 }
 
 
- .img-responsive{
-    opacity: 0.85 !important;
- }   
-
 
    
     
-
-
-
-
 
 
 
