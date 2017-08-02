@@ -13,3 +13,13 @@ $(document).ready(function(){
 
 	});
 });
+
+$(document).ready(function(){
+	$("#backtomain").click(function(){
+	$("#blogpage").fadeOut("fast");
+	$("#blogpage").toggle()
+	$("#mainpage").fadeIn("fast");
+
+	});
+});
+
