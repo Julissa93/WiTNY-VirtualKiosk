@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
 	$("#blogpage").toggle()
+	$("#slideshow-bob").toggle()
 	$("#announcements").toggle()
 	$("#suggestions").toggle()
 });
@@ -32,6 +33,45 @@ $(document).ready(function(){
 	$("#suggestions").fadeIn("fast");
 	});
 });
+
+// slideshow
+$(document).ready(function(){
+	$("#photosbutton").click(function(){
+	$("#blogpage").fadeOut("fast");
+	$("#slideshow-bob").toggle()
+	$("#slideshow-bob").fadeIn("fast");
+	});
+});
+
+//videos 
+$(document).ready(function(){
+	$("#videosbutton").click(function(){
+	$("#blogpage").fadeOut("fast");
+	$("#videos").toggle()
+	$("#videos").fadeIn("fast");
+	});
+});
+
+//back to blog from videos
+$(document).ready(function(){
+	$("#backtoblog2").click(function(){
+	$("#videos").fadeOut("fast");
+	$("#videos").toggle()
+	$("#blogpage").fadeIn("fast");
+
+	});
+});
+
+//back to blog page from photos
+$(document).ready(function(){
+	$("#backtoblog").click(function(){
+	$("#slideshow-bob").fadeOut("fast");
+	$("#slideshow-bob").toggle()
+	$("#blogpage").fadeIn("fast");
+
+	});
+});
+
 
 // back1
 $(document).ready(function(){
