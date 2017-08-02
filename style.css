@@ -220,6 +220,7 @@ a {
     height: auto;
 }
    
+<<<<<<< HEAD
 .panel.date {
     margin: 0px;
     width: 60px;
@@ -236,6 +237,11 @@ a {
   
     font-weight: 700;
     font-size: 1.5em;
+=======
+    
+.slideshow{
+    padding-top: 30%; 
+>>>>>>> 02100f7a0767c7dc36685bb2c44d5ed99d11224d
 }
 
 
