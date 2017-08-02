@@ -125,7 +125,11 @@ $(document).ready(function(){
 	});
 });
 
-
+$(document).ready(function(){
+	$("#submitsuggestion").click(function() {
+	  $("#submitmessage").html("<span class='animated bounceInLeft label label-info' style='animation-duration: 3s;'>Thank You <i class='fa fa-smile-o' aria-hidden='true'></i></span>");
+	});
+});
 
 
 /*4 videos page*/
