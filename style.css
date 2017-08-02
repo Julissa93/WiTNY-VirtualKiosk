@@ -88,9 +88,7 @@ html {
     
 }
 
-.container{
-    bottom: 0; 
-}
+
 .start{
     position: absolute;
     bottom: 50px;
@@ -128,4 +126,129 @@ background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, F
 .jumbotron{
     background-color: transparent !important;
 }
+
+/********* style for blog page *********/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600');
+
+a {
+   color:#333;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+
+.img-responsive {
+  width: 100%;
+}
+/* ------ main-page ------ */
+.main-page{
+    max-width:1000px;
+    margin:0 auto;
+}
+.container{
+    max-width:1000px;
+    margin:0 auto;
+}
+/* ------ top-nav ------ */
+.top-nav{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+/* ------ main-banner ------ */
+.main-banner{
+    margin-bottom:20px;
+}
+
+/* ------ page ------ */
+.page{
+    background-color:#fff;
+    padding:20px 15px;
+    margin-bottom:20px;
+}
+.page h3{
+    font-size:22px;
+    margin-bottom:12px;
+}
+.page p{
+    font-size:17px;
+    font-weight:500;
+}
+.page .details ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom:18px;
+}
+.page .details ul li{
+   float:left;
+   padding-right:15px;
+   font-size: 13px;
+   font-weight: 600;
+}
+.page .details ul li:last-child {
+  float: inherit;
+}
+.page h4{
+    font-size:13px;
+    font-weight:600;
+}
+/* ------ wedgets ------ */
+.widgets{
+    background-color:#fff;
+    padding:20px 15px;
+    margin-bottom:20px;
+}
+.widgets h3{
+    padding-bottom:10px;
+    font-size:20px;
+    margin-bottom:15px;
+    border-bottom:1px solid #eaeaea;
+}
+.widgets ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.widgets ul li{
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.widgets h4{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+
+ .img-responsive{
+    opacity: 0.85 !important;
+ }   
+
+
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
