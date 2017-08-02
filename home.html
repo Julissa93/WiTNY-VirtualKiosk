@@ -39,6 +39,17 @@
     transition: all 2s ease;
   }
 
+  #cube2 {
+    position: relative;
+    margin: 0 auto;
+    height: 1000px;
+    width: 600px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 2s ease;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+  }
+
   .face {
     position: absolute;
     height: 1400px;
@@ -46,24 +57,31 @@
      border-radius: 5px;
   }
 
+   .face2 {
+    position: absolute;
+    height: 1400px;
+    width: 300px;
+     border-radius: 5px;
+  }
+
   #cube .one {
     -webkit-transform: translateZ(300px);
-    transform: translateZ(300px);
+    transform: translateZ(150px);
   }
 
   #cube .two{
     -webkit-transform: rotateY(90deg) translateZ(300px);
-    transform: rotateY(90deg) translateZ(300px);
+    transform: rotateY(90deg) translateZ(450px);
   }
 
   #cube .three {
     -webkit-transform: rotateY(180deg) translateZ(300px);
-    transform: rotateY(180deg) translateZ(300px);
+    transform: rotateY(180deg) translateZ(150px);
   }
 
   #cube .four {
     -webkit-transform: rotateY(-90deg) translateZ(300px);
-    transform: rotateY(-90deg) translateZ(300px);
+    transform: rotateY(-90deg) translateZ(150px);
   }
 
 </style>
@@ -495,7 +513,7 @@
     
 
     <!-- __________________________________________________ Face 2 __________________________________________________-->
-    <div class="face two cubebox" >
+    <div class="face2 two cubebox2" >
       <center> 
         
          <a class="hvr-buzz"> <img  src="pictures/sidephone.png" id="phone"></a><br>
@@ -508,14 +526,6 @@
 
     <!-- __________________________________________________ Face 3 __________________________________________________-->
     <div class="face three cubebox" >
-      
-     
-
-    </div>
-
-     <!-- __________________________________________________ Face 4 __________________________________________________-->
-    <div class="face four cubebox" >
-     <h1>left</h1>
       <div id = "screen">
         <div class = "container-fluid">
           <div class = "slideshow">
@@ -523,6 +533,12 @@
           </div>
         </div>
       </div>
+     
+    </div>
+
+     <!-- __________________________________________________ Face 4 __________________________________________________-->
+    <div class="face2 four cubebox2" >
+      
 
     </div>
 
