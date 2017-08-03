@@ -110,18 +110,24 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#surveybutton").click(function() {
 	  $("#survey").slideToggle("slow");
+	  $("#surveyresults").hide();
+	  $("#makesuggestion").hide();
 	});
 });
 
 $(document).ready(function(){
 	$("#surveyresultsbutton").click(function() {
 	  $("#surveyresults").slideToggle("slow");
+	  $("#makesuggestion").hide();
+	  $("#survey").hide();
 	});
 });
 
 $(document).ready(function(){
 	$("#makesuggestionbutton").click(function() {
 	  $("#makesuggestion").slideToggle("slow");
+	  $("#survey").hide();
+	  $("#surveyresults").hide();
 	});
 });
 
