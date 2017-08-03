@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Vast+Shadow');
 html {
     position: relative;
     min-height: 100%;
@@ -106,6 +107,10 @@ hr{border: 1px solid orange;}
     padding: 16px;
 }
 
+#mainpage h1{
+    font-family: 'Vast Shadow', cursive;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -126,7 +131,6 @@ hr{border: 1px solid orange;}
 /********* style for blog page *********/
 
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 #blogpage{
 
