@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Vast+Shadow');
+@import url('https://fonts.googleapis.com/css?family=Anton|Lato|Roboto|Vast+Shadow');
 html {
     position: relative;
     min-height: 100%;
@@ -108,7 +108,7 @@ hr{border: 1px solid orange;}
 }
 
 #mainpage h1{
-    font-family: 'Vast Shadow', cursive;
+    font-family: 'Lato', sans-serif;
 }
 
 @media screen and (max-height: 450px) {
