@@ -21,13 +21,20 @@
 
 <style>
 
+body{
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
   #wrapper {
     -webkit-perspective: 1100px;
     -webkit-perspective-origin: 50% 300px;
     perspective: 1100px;
     perspective-origin: 50% 300px;
     margin-top: 100px;
+
+
   }
 
   #cube {
@@ -99,7 +106,7 @@
   <a href="#" id="face2">Right</a>
   <a href="#" id="face4">Left</a>
   <a href="#" id="face3">Back</a>
-  
+
 </div>
 
 <div id="main">
@@ -124,15 +131,15 @@
             <div class = "row">
               <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <iframe class = "animated fadeIn" style = "animation-duration: 5s; " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24176.251535937678!2d-73.96828677849066!3d40.761333182809906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258c4d85a0d8d%3A0x11f877ff0b8ffe27!2sRoosevelt+Island!5e0!3m2!1sen!2sus!4v1501601044727" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-              </div> 
+              </div>
             </div>
-             &nbsp;  
+             &nbsp;
             <div class="row">
               <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
               <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                 <div class = "col-xs-6 col-sm-6 col-md-6 col-lg-6 col-sm-offset-3 " >
-                  <center> 
+                  <center>
                     <button type="button" class="btn btn-primary btn-block" id="blogbutton">Blog</button><br>
 
                     <!-- Secondary, outline button -->
@@ -143,14 +150,14 @@
                   </center>
                 </div>
               </div>
-            </div>  
+            </div>
           </div>
         </div>
 
         <div id="blogpage" style="overflow-y: scroll; position: relative; height: 100%;">
          <a type="button" id="backtomain" class = "btn btn-info btn-md"><span class="glyphicon glyphicon-arrow-left"></span> Back</a>
-          
-          <!-- BEGINNING OF BLOG -->   
+
+          <!-- BEGINNING OF BLOG -->
             <div class = "container-fluid">
              <div class="main-page">
              <!-- top-nav -->
@@ -160,16 +167,16 @@
                           <div class="col-md-6 col-sm-6"></div>
                           <div class="col-md-6 col-sm-6"></div>
                       </div>
-                  </div>   
+                  </div>
              </div>
-             
+
              <!-- main-banner -->
               <div class="main-banner">
                   <div class="container-fluid">
                       <img src="tramway.gif" height = "200" width = "1200" class="img-responsive">
                   </div>
               </div>
-              
+
               <!-- post-widgets -->
               <div class="post-widgets">
                   <div class="container-fluid">
@@ -181,7 +188,7 @@
                           <li><a type = "button" id = "photosbutton" href="#slideshow-bob">Photos</a></li>
                           <li><a type = "button" id = "videosbutton" href="#videos">Videos</a></li>
                         </ul>
-                  
+
                       </div>
                     </nav>
                   </div>
@@ -193,9 +200,9 @@
                                   </a>
                                   <div class="details">
                                       <ul>
-                                       
+
                                           <li>Date: April 18, 2017</li>
-                                         
+
                                       </ul>
                                   </div>
                                   <div class="blogcontent">
@@ -203,7 +210,7 @@
                                   </div>
                                   <h4>Brian is a weelchair-bound senior at Roosevelt Island. He loves nature<br>and jazz music.</h4>
                                    <button type="button" class="btn btn-success" id="suggestionsbutton">Read More</button>
-                                  
+
                               </div>
                               <div class="page">
                               <a href = "#">
@@ -212,23 +219,23 @@
                                   </h3></a>
                                   <div class="details">
                                       <ul>
-                                          
+
                                           <li>Date: April 18, 2017</li>
-                                          
+
                                       </ul>
                                   </div>
                                   <div class="blogcontent">
                                        <p><img src=http://img05.deviantart.net/611b/i/2015/114/1/a/old_man_by_lash_upon_lash-d5j71hq.jpg width="350" height="300"></p>
-                                       John is a hearing impaired senior on Roosevelt Island. He was diagnosed of Autism at the age of 10. 
-                                        
+                                       John is a hearing impaired senior on Roosevelt Island. He was diagnosed of Autism at the age of 10.
+
                                   </div>
                                   <button type="button" class="btn btn-success" id="suggestionsbutton">Read More</button>
-                                  
+
                               </div>
-                              
-                              
+
+
                           </div>
-                          
+
                       </div>
                   </div>
               </div>
@@ -245,7 +252,7 @@
             <div class="section-header-underline"></div>
             <div class = "slideshow">
               <iframe style="border:none" src="http://files.photosnack.com/iframejs/embed.html?hash=ptp56jcc4&t=1501688554" width="500" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" >
-                
+
               </iframe>
             </div>
           </div>
@@ -259,8 +266,8 @@
                 <div class="content">
                 <h1 class="section-header">Video Gallery</h1>
                 <div class="section-header-underline"></div>
-                <div class="video-gallery"> 
-                  <div class="gallery-item"> 
+                <div class="video-gallery">
+                  <div class="gallery-item">
                     <img src="http://img.youtube.com/vi/bNZapuinmvs/0.jpg" alt="Editor Reel"  />
                     <div class="gallery-item-caption">
                       <div>
@@ -268,10 +275,10 @@
                         <p>Giving Older People a Voice Through Technology</p>
                       </div>
                       <a class="vimeo-popup" href="https://www.youtube.com/embed/bNZapuinmvs"></a>
-                    </div>      
+                    </div>
                   </div>
-            
-            
+
+
                   <div class="gallery-item ">
                     <img src="http://img.youtube.com/vi/3LGSfgOi9UU/0.jpg" alt="Editor Reel"/>
                     <div class="gallery-item-caption">
@@ -280,9 +287,9 @@
                         <p>Bringing Younger and Older Generations Together</p>
                       </div>
                       <a class="vimeo-popup" href="https://www.youtube.com/embed/3LGSfgOi9UU"></a>
-                    </div>                    
+                    </div>
                   </div>
-                  
+
                   <div class="gallery-item">
                     <img src="http://img.youtube.com/vi/ehvw0TKm5vA/0.jpg" alt="Editor Reel"/>
                     <div class="gallery-item-caption">
@@ -291,9 +298,9 @@
                         <p>A story about interaction between children and eldery</p>
                       </div>
                       <a class="vimeo-popup" href="https://www.youtube.com/embed/ehvw0TKm5vA"></a>
-                    </div>      
+                    </div>
                   </div>
-                   
+
                   <div class="gallery-item">
                     <img src="http://img.youtube.com/vi/jEYpJhuBMcU/0.jpg" alt="Editor Reel"/>
                     <div class="gallery-item-caption">
@@ -302,12 +309,12 @@
                         <p>weTV | Episode: Crazy Client Requests</p>
                       </div>
                       <a class="vimeo-popup" href="https://www.youtube.com/embed/jEYpJhuBMcU"></a>
-                    </div>      
+                    </div>
                   </div>
-                  
+
                 </div>
               </div>
-             </div> 
+             </div>
           </div>
 
         </div>
@@ -319,8 +326,8 @@
           <div class="container-fluid">
           <div class="row">
             <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-                
-                    <!-- Fluid width widget -->        
+
+                    <!-- Fluid width widget -->
                   <div class="panel panel-info">
                         <div class="panel-heading">
                             <h3 class="panel-title">
@@ -409,9 +416,9 @@
                             <a href="#" class="btn btn-default btn-block">More Events »</a>
                         </div>
                     </div>
-                    <!-- End fluid width widget --> 
+                    <!-- End fluid width widget -->
                     <iframe src="https://teamup.com/ksqy23dy37x39f3ei5" frameborder="0" width="100%" height="400">
-                      
+
                     </iframe>
         </div>
       </div>
@@ -427,12 +434,12 @@
           <div class="container-fluid">
 
             <div class="row">
-               <center> 
+               <center>
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-sm-offset-3 ">
-                  <button type="button" class="btn btn-primary btn-block" id="surveybutton">Take Our Weekly Survey</button><br>              
+                  <button type="button" class="btn btn-primary btn-block" id="surveybutton">Take Our Weekly Survey</button><br>
                   <button type="button" class="btn btn-primary btn-block" id="surveyresultsbutton">View This weeks Results</button><br>
                   <button type="button" class="btn btn-primary btn-block" id="makesuggestionbutton">Make a Suggestion</button><br>
-                </div>                  
+                </div>
                 </center>
             </div>
 
@@ -504,7 +511,7 @@
                      </center>
                 </div>
              </div>
-            
+
            </div>
 
 
@@ -521,13 +528,13 @@
 
 
     </div>
-    
+
 
     <!-- __________________________________________________ Face 2 __________________________________________________-->
     <div class="face2 two cubebox2" >
-      <center> 
-        
-      
+      <center>
+
+
          <div id="chargerbox">
             <br><br><br><br><br><br><br><br><br>
           <a class="hvr-buzz"> <img  src="pictures/chargingport.png"  id="chargingport"></a>
@@ -552,15 +559,15 @@
             <div class = "row">
               <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <iframe class = "animated fadeIn" style = "animation-duration: 5s; " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24176.251535937678!2d-73.96828677849066!3d40.761333182809906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258c4d85a0d8d%3A0x11f877ff0b8ffe27!2sRoosevelt+Island!5e0!3m2!1sen!2sus!4v1501601044727" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-              </div> 
+              </div>
             </div>
-             &nbsp;  
+             &nbsp;
             <div class="row">
               <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
               <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                 <div class = "col-xs-6 col-sm-6 col-md-6 col-lg-6 col-sm-offset-3 " >
-                  <center> 
+                  <center>
                     <button type="button" class="btn btn-primary btn-block" id="blogbutton">Blog</button><br>
 
                     <!-- Secondary, outline button -->
@@ -571,39 +578,39 @@
                   </center>
                 </div>
               </div>
-            </div>  
+            </div>
           </div>
         </div>
         </div>
 
-     
+
     </div>
 
      <!-- __________________________________________________ Face 4 __________________________________________________-->
     <div class="face2 four cubebox2" >
-       <center> 
+       <center>
          <div id="chargerbox">
               <br>
               <p><i class="fa fa-phone-square fa-4x hvr-buzz callbuttons" aria-hidden="true" id="callcenter"></i>CommunityCenter</p><br>
               <p><i class="fa fa-phone-square fa-4x hvr-buzz callbuttons" aria-hidden="true" id="callemergency"></i>Emergency/911</p><br>
               <p><i class="fa fa-phone-square fa-4x hvr-buzz callbuttons" aria-hidden="true" id="callinfo""></i>Information/311</p><br>
-        
+
             <a class="hvr-buzz"> <img  src="pictures/phoneblack.png" id="phone"></a><br>
         </div>
       </center>
 
     </div>
 
-    
+
   </div>
 </div>
 
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-    
+
     $("#face1").click(function(){
        calcRotation(0);
     });
@@ -611,7 +618,7 @@ $(document).ready(function(){
     $("#face2").click(function(){
       calcRotation(90);
     });
-    
+
     $("#face3").click(function(){
        calcRotation(180);
     });
@@ -619,7 +626,7 @@ $(document).ready(function(){
     $("#face4").click(function(){
         calcRotation(270);
     });
-    
+
     function calcRotation(rot){
            $("#cube").css("transform", "rotateY(-" + rot + "deg)");
     }
